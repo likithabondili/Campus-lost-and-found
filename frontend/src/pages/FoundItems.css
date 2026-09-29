@@ -1,0 +1,526 @@
+* {
+  box-sizing: border-box;
+}
+
+.found-page {
+  min-height: 100vh;
+  background:
+    radial-gradient(
+      circle at top left,
+      rgba(99, 102, 241, 0.14),
+      transparent 32%
+    ),
+    linear-gradient(135deg, #f5f7ff 0%, #eef2ff 45%, #f8f9ff 100%);
+  color: #172033;
+  font-family: Arial, sans-serif;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.found-navbar {
+  width: 100%;
+  min-height: 76px;
+  padding: 14px 7%;
+  background: #111a3a;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  box-shadow: 0 8px 25px rgba(17, 26, 58, 0.16);
+}
+
+.found-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: white;
+  text-decoration: none;
+}
+
+.found-brand-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  font-size: 22px;
+  box-shadow: 0 8px 18px rgba(99, 102, 241, 0.3);
+}
+
+.found-brand-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.05;
+}
+
+.found-brand-text span:first-child {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.found-brand-text span:last-child {
+  font-size: 12px;
+  color: #b9c3e6;
+  margin-top: 4px;
+}
+
+.found-nav {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.found-nav a {
+  color: #dce3ff;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 10px 15px;
+  border-radius: 10px;
+  transition: 0.25s ease;
+}
+
+.found-nav a:hover {
+  background: rgba(255, 255, 255, 0.09);
+  color: white;
+}
+
+.found-nav .found-nav-active {
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  color: white;
+  box-shadow: 0 7px 16px rgba(99, 102, 241, 0.25);
+}
+
+/* =========================
+   MAIN
+========================= */
+
+.found-main {
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 55px 25px 70px;
+}
+
+.found-heading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 30px;
+  margin-bottom: 28px;
+}
+
+.found-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 8px 13px;
+  border-radius: 30px;
+  background: #e9e7ff;
+  color: #5145cd;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.7px;
+}
+
+.found-heading h1 {
+  margin: 15px 0 8px;
+  font-size: 42px;
+  line-height: 1.1;
+  color: #111a3a;
+  letter-spacing: -1px;
+}
+
+.found-heading p {
+  margin: 0;
+  color: #667085;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.found-dashboard-button {
+  flex-shrink: 0;
+  text-decoration: none;
+  padding: 12px 18px;
+  border-radius: 11px;
+  background: white;
+  color: #4338ca;
+  font-size: 14px;
+  font-weight: 700;
+  border: 1px solid #dfe3f5;
+  box-shadow: 0 7px 20px rgba(41, 52, 98, 0.07);
+  transition: 0.25s ease;
+}
+
+.found-dashboard-button:hover {
+  transform: translateY(-2px);
+  border-color: #a5b4fc;
+  box-shadow: 0 10px 25px rgba(67, 56, 202, 0.12);
+}
+
+/* =========================
+   COUNT BAR
+========================= */
+
+.found-count-bar {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 18px 20px;
+  margin-bottom: 28px;
+  border-radius: 16px;
+  background: white;
+  border: 1px solid #e5e7f4;
+  box-shadow: 0 8px 25px rgba(31, 41, 75, 0.06);
+}
+
+.found-count-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e8eaff;
+  color: #4f46e5;
+  font-size: 21px;
+  font-weight: 800;
+}
+
+.found-count-bar strong {
+  display: block;
+  color: #111a3a;
+  font-size: 22px;
+}
+
+.found-count-bar span {
+  color: #727b91;
+  font-size: 13px;
+}
+
+/* =========================
+   GRID
+========================= */
+
+.found-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+/* =========================
+   CARD
+========================= */
+
+.found-card {
+  background: white;
+  border: 1px solid #e4e7f2;
+  border-radius: 22px;
+  padding: 24px;
+  box-shadow: 0 12px 32px rgba(36, 47, 88, 0.08);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  overflow: hidden;
+}
+
+.found-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 18px 40px rgba(54, 65, 120, 0.13);
+}
+
+.found-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.found-type {
+  padding: 7px 11px;
+  border-radius: 8px;
+  background: #e8f0ff;
+  color: #3155c7;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.7px;
+}
+
+.found-status {
+  padding: 7px 11px;
+  border-radius: 8px;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.active-status {
+  background: #e7f8ef;
+  color: #16834b;
+}
+
+.claimed-status {
+  background: #f0f1f5;
+  color: #6b7280;
+}
+
+.found-item-icon {
+  width: 62px;
+  height: 62px;
+  border-radius: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 17px;
+  background: linear-gradient(
+    135deg,
+    #eef2ff,
+    #e0e7ff
+  );
+  font-size: 29px;
+}
+
+.found-card h2 {
+  margin: 0 0 9px;
+  color: #172033;
+  font-size: 21px;
+}
+
+.found-description {
+  min-height: 45px;
+  margin: 0 0 22px;
+  color: #697386;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* =========================
+   DETAILS
+========================= */
+
+.found-details {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 16px;
+  margin-bottom: 18px;
+  border-radius: 14px;
+  background: #f7f8fd;
+}
+
+.found-detail {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.found-detail-icon {
+  width: 29px;
+  height: 29px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+}
+
+.found-detail div {
+  min-width: 0;
+}
+
+.found-detail small {
+  display: block;
+  margin-bottom: 3px;
+  color: #8991a4;
+  font-size: 11px;
+}
+
+.found-detail strong {
+  display: block;
+  color: #30384d;
+  font-size: 13px;
+  word-break: break-word;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.found-details-button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 13px 15px;
+  border-radius: 11px;
+  background: linear-gradient(
+    135deg,
+    #4f46e5,
+    #7c3aed
+  );
+  color: white;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 700;
+  box-shadow: 0 8px 18px rgba(79, 70, 229, 0.2);
+  transition: 0.25s ease;
+}
+
+.found-details-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 11px 23px rgba(79, 70, 229, 0.28);
+}
+
+.found-delete-button {
+  width: 100%;
+  margin-top: 10px;
+  padding: 12px 15px;
+  border: 1px solid #fecaca;
+  border-radius: 11px;
+  background: #fff5f5;
+  color: #dc2626;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.found-delete-button:hover {
+  background: #fee2e2;
+}
+
+/* =========================
+   EMPTY STATE
+========================= */
+
+.found-empty {
+  background: white;
+  border: 1px solid #e4e7f2;
+  border-radius: 22px;
+  padding: 70px 25px;
+  text-align: center;
+  box-shadow: 0 12px 32px rgba(36, 47, 88, 0.07);
+}
+
+.found-empty-icon {
+  width: 76px;
+  height: 76px;
+  margin: 0 auto 20px;
+  border-radius: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #eef2ff;
+  font-size: 34px;
+}
+
+.found-empty h2 {
+  margin: 0 0 9px;
+  color: #172033;
+  font-size: 24px;
+}
+
+.found-empty p {
+  margin: 0 0 22px;
+  color: #737b8e;
+  font-size: 14px;
+}
+
+.found-empty-button {
+  display: inline-block;
+  padding: 12px 18px;
+  border-radius: 11px;
+  background: linear-gradient(
+    135deg,
+    #4f46e5,
+    #7c3aed
+  );
+  color: white;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.found-footer {
+  padding: 22px;
+  text-align: center;
+  color: #7b8499;
+  font-size: 12px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1000px) {
+  .found-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .found-navbar {
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+}
+
+@media (max-width: 700px) {
+  .found-navbar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .found-brand {
+    justify-content: center;
+  }
+
+  .found-nav {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .found-heading {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .found-heading h1 {
+    font-size: 34px;
+  }
+
+  .found-dashboard-button {
+    width: 100%;
+    text-align: center;
+  }
+
+  .found-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 450px) {
+  .found-main {
+    padding: 35px 15px 50px;
+  }
+
+  .found-nav {
+    gap: 3px;
+  }
+
+  .found-nav a {
+    padding: 8px 9px;
+    font-size: 12px;
+  }
+
+  .found-card {
+    padding: 20px;
+  }
+}

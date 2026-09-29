@@ -1,0 +1,691 @@
+/* =====================================================
+   CAMPUS LOST & FOUND
+   REPORT ITEM
+   ===================================================== */
+
+.report-page {
+  min-height: 100vh;
+
+  background:
+    radial-gradient(
+      circle at 5% 30%,
+      rgba(55, 130, 235, 0.11),
+      transparent 27%
+    ),
+    radial-gradient(
+      circle at 95% 70%,
+      rgba(105, 65, 230, 0.11),
+      transparent 30%
+    ),
+    linear-gradient(
+      135deg,
+      #f5f9ff 0%,
+      #eef5ff 50%,
+      #f7f3ff 100%
+    );
+
+  color: #172b4d;
+
+  overflow-x: hidden;
+}
+
+
+/* =====================================================
+   NAVBAR
+   ===================================================== */
+
+.report-navbar {
+  width: 100%;
+  height: 72px;
+
+  padding: 0 7%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background: #102a5c;
+
+  box-shadow:
+    0 4px 18px rgba(16, 42, 92, 0.18);
+
+  position: relative;
+  z-index: 10;
+}
+
+
+/* =====================================================
+   BRAND
+   ===================================================== */
+
+.report-brand {
+  display: flex;
+  align-items: center;
+
+  gap: 11px;
+
+  color: white;
+
+  text-decoration: none;
+}
+
+.report-brand-icon {
+  width: 42px;
+  height: 42px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 12px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #4da3ff,
+      #7045e8
+    );
+
+  font-size: 22px;
+
+  box-shadow:
+    0 5px 14px rgba(56, 91, 190, 0.35);
+}
+
+.report-brand-text {
+  display: flex;
+  flex-direction: column;
+
+  line-height: 1.05;
+
+  font-size: 17px;
+
+  font-weight: 700;
+}
+
+
+/* =====================================================
+   NAVIGATION
+   ===================================================== */
+
+.report-nav {
+  display: flex;
+  align-items: center;
+
+  gap: 28px;
+}
+
+.report-nav a {
+  color: #f0f5ff;
+
+  text-decoration: none;
+
+  font-size: 14px;
+
+  font-weight: 500;
+
+  transition: 0.2s ease;
+}
+
+.report-nav a:hover {
+  color: #9ec9ff;
+}
+
+.report-nav-active {
+  color: #9ec9ff !important;
+}
+
+
+/* =====================================================
+   MAIN
+   ===================================================== */
+
+.report-main {
+  width: 100%;
+
+  max-width: 1120px;
+
+  margin: 0 auto;
+
+  padding: 55px 25px 35px;
+
+  display: grid;
+
+  grid-template-columns: 0.9fr 1.1fr;
+
+  gap: 70px;
+
+  align-items: center;
+}
+
+
+/* =====================================================
+   LEFT INTRO
+   ===================================================== */
+
+.report-intro {
+  position: relative;
+
+  z-index: 2;
+}
+
+
+/* Badge */
+
+.report-badge {
+  display: inline-flex;
+  align-items: center;
+
+  padding: 8px 14px;
+
+  margin-bottom: 19px;
+
+  border-radius: 25px;
+
+  background: #e4efff;
+
+  color: #2864d5;
+
+  font-size: 10px;
+
+  font-weight: 700;
+
+  letter-spacing: 0.6px;
+}
+
+
+/* Heading */
+
+.report-intro h1 {
+  margin: 0;
+
+  color: #102a5c;
+
+  font-size: 55px;
+
+  line-height: 0.98;
+
+  letter-spacing: -2px;
+}
+
+.report-intro h1 span {
+  background:
+    linear-gradient(
+      90deg,
+      #2e82ed,
+      #6541e7
+    );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  background-clip: text;
+}
+
+
+/* Gradient line */
+
+.report-gradient-line {
+  display: flex;
+
+  gap: 5px;
+
+  margin: 15px 0 17px;
+}
+
+.report-gradient-line span:first-child {
+  width: 53px;
+  height: 5px;
+
+  border-radius: 10px;
+
+  background: #317ce9;
+}
+
+.report-gradient-line span:last-child {
+  width: 34px;
+  height: 5px;
+
+  border-radius: 10px;
+
+  background: #6944e6;
+}
+
+
+/* Subheading */
+
+.report-intro h2 {
+  margin: 0 0 13px;
+
+  color: #334b6f;
+
+  font-size: 21px;
+
+  line-height: 1.4;
+}
+
+
+/* Description */
+
+.report-intro > p {
+  max-width: 475px;
+
+  margin: 0;
+
+  color: #71819a;
+
+  font-size: 13px;
+
+  line-height: 1.7;
+}
+
+
+/* =====================================================
+   INFO LIST
+   ===================================================== */
+
+.report-info-list {
+  margin-top: 28px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 11px;
+}
+
+.report-info-item {
+  max-width: 460px;
+
+  padding: 13px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  border-radius: 13px;
+
+  background:
+    rgba(255, 255, 255, 0.75);
+
+  border: 1px solid #e0e8f5;
+
+  box-shadow:
+    0 5px 16px rgba(55, 82, 128, 0.05);
+}
+
+
+/* Info icon */
+
+.report-info-icon {
+  width: 42px;
+  height: 42px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 11px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #e5f1ff,
+      #ece6ff
+    );
+
+  font-size: 19px;
+}
+
+
+/* Info text */
+
+.report-info-item div:last-child {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 3px;
+}
+
+.report-info-item strong {
+  color: #294467;
+
+  font-size: 12px;
+}
+
+.report-info-item small {
+  color: #7d8da5;
+
+  font-size: 10px;
+
+  line-height: 1.4;
+}
+
+
+/* =====================================================
+   FORM CARD
+   ===================================================== */
+
+.report-card {
+  width: 100%;
+
+  max-width: 510px;
+
+  margin-left: auto;
+
+  padding: 30px;
+
+  border-radius: 23px;
+
+  background:
+    rgba(255, 255, 255, 0.96);
+
+  border: 1px solid #e0e8f5;
+
+  box-shadow:
+    0 20px 55px rgba(43, 73, 132, 0.13);
+
+  position: relative;
+}
+
+
+/* Card top icon */
+
+.report-card-icon {
+  width: 58px;
+  height: 58px;
+
+  margin-bottom: 15px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 16px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #e4f1ff,
+      #ece5ff
+    );
+
+  font-size: 25px;
+}
+
+
+/* Card heading */
+
+.report-card-heading h2 {
+  margin: 0;
+
+  color: #18345f;
+
+  font-size: 24px;
+}
+
+.report-card-heading p {
+  margin: 5px 0 22px;
+
+  color: #7c8ca4;
+
+  font-size: 12px;
+}
+
+
+/* =====================================================
+   INPUTS
+   ===================================================== */
+
+.report-input {
+  margin-bottom: 15px;
+}
+
+.report-input label {
+  display: block;
+
+  margin-bottom: 7px;
+
+  color: #294467;
+
+  font-size: 11px;
+
+  font-weight: 700;
+}
+
+.report-input input,
+.report-input select,
+.report-input textarea {
+  width: 100%;
+
+  padding: 12px 13px;
+
+  border: 1px solid #cfdbed;
+
+  border-radius: 10px;
+
+  outline: none;
+
+  background: #fbfcff;
+
+  color: #263f66;
+
+  font-family: Arial, Helvetica, sans-serif;
+
+  font-size: 12px;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    background 0.2s ease;
+}
+
+.report-input input::placeholder,
+.report-input textarea::placeholder {
+  color: #a2adbd;
+}
+
+.report-input input:focus,
+.report-input select:focus,
+.report-input textarea:focus {
+  border-color: #5d68dc;
+
+  background: white;
+
+  box-shadow:
+    0 0 0 3px rgba(82, 96, 220, 0.10);
+}
+
+.report-input textarea {
+  min-height: 95px;
+
+  resize: vertical;
+
+  line-height: 1.5;
+}
+
+
+/* =====================================================
+   SUBMIT BUTTON
+   ===================================================== */
+
+.report-button {
+  width: 100%;
+
+  min-height: 48px;
+
+  margin-top: 5px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 9px;
+
+  border: none;
+
+  border-radius: 10px;
+
+  background:
+    linear-gradient(
+      90deg,
+      #2e82ed,
+      #6541e7
+    );
+
+  color: white;
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  box-shadow:
+    0 9px 22px rgba(65, 91, 211, 0.22);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.report-button:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 13px 27px rgba(65, 91, 211, 0.30);
+}
+
+.report-button:active {
+  transform: translateY(0);
+}
+
+
+/* =====================================================
+   BACK BUTTON
+   ===================================================== */
+
+.report-back {
+  display: block;
+
+  margin-top: 17px;
+
+  text-align: center;
+
+  color: #5069bb;
+
+  text-decoration: none;
+
+  font-size: 11px;
+
+  font-weight: 600;
+}
+
+.report-back:hover {
+  color: #304da5;
+}
+
+
+/* =====================================================
+   FOOTER
+   ===================================================== */
+
+.report-footer {
+  padding: 8px 20px 25px;
+
+  text-align: center;
+
+  color: #8996aa;
+
+  font-size: 10px;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+   ===================================================== */
+
+@media (max-width: 900px) {
+
+  .report-main {
+    grid-template-columns: 1fr;
+
+    max-width: 650px;
+
+    gap: 35px;
+
+    padding-top: 40px;
+  }
+
+  .report-intro {
+    text-align: center;
+  }
+
+  .report-intro > p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .report-gradient-line {
+    justify-content: center;
+  }
+
+  .report-info-item {
+    max-width: 100%;
+
+    text-align: left;
+  }
+
+  .report-card {
+    margin: 0 auto;
+  }
+}
+
+
+@media (max-width: 600px) {
+
+  .report-navbar {
+    height: auto;
+
+    padding: 14px 18px;
+
+    flex-direction: column;
+
+    gap: 13px;
+  }
+
+  .report-nav {
+    gap: 13px;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+  }
+
+  .report-nav a {
+    font-size: 12px;
+  }
+
+  .report-main {
+    padding: 35px 18px 25px;
+  }
+
+  .report-intro h1 {
+    font-size: 45px;
+  }
+
+  .report-intro h2 {
+    font-size: 18px;
+  }
+
+  .report-card {
+    padding: 23px;
+
+    border-radius: 19px;
+  }
+}
