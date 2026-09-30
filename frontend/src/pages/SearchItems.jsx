@@ -32,7 +32,7 @@ function SearchItems() {
       }
 
       const response = await fetch(
-        `http://localhost:5000/api/items/search/filter?${params.toString()}`
+        `http://http://campus-lost-and-found-1-8d21.onrender.com/api/items/search/filter?${params.toString()}`
       );
 
       const data = await response.json();

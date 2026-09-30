@@ -37,7 +37,7 @@ function Register() {
 
     try {
       const response = await fetch(
-        "http://localhost:5000/api/auth/register",
+        "http://http://campus-lost-and-found-1-8d21.onrender.com/api/auth/register",
         {
           method: "POST",
           headers: {

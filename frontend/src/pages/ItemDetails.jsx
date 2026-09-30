@@ -10,7 +10,7 @@ function ItemDetails() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch(`http://localhost:5000/api/items/${id}`)
+    fetch(`http://http://campus-lost-and-found-1-8d21.onrender.com/api/items/${id}`)
       .then((response) => response.json())
       .then((data) => {
         setItem(data);
@@ -33,7 +33,7 @@ function ItemDetails() {
 
     try {
       const response = await fetch(
-        `http://localhost:5000/api/items/${id}/claim`,
+        `http://http://campus-lost-and-found-1-8d21.onrender.com/api/items/${id}/claim`,
         {
           method: "PUT",
           headers: {

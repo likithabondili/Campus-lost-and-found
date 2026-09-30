@@ -8,7 +8,7 @@ function LostItems() {
   const userId = localStorage.getItem("userId");
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/items/search/filter?type=lost")
+    fetch("http://http://campus-lost-and-found-1-8d21.onrender.com/api/items/search/filter?type=lost")
       .then((response) => response.json())
       .then((data) => {
         setItems(data);
@@ -29,7 +29,7 @@ function LostItems() {
 
     try {
       const response = await fetch(
-        `http://localhost:5000/api/items/${itemId}`,
+        `http://http://campus-lost-and-found-1-8d21.onrender.com/api/items/${itemId}`,
         {
           method: "DELETE",
           headers: {

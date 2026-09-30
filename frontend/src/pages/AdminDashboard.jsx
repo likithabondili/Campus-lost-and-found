@@ -16,7 +16,7 @@ function AdminDashboard() {
   useEffect(() => {
     const fetchStats = async () => {
       try {
-        const response = await fetch("http://localhost:5000/api/items");
+        const response = await fetch("http://http://campus-lost-and-found-1-8d21.onrender.com/api/items");
 
         if (!response.ok) {
           throw new Error("Failed to fetch items");
