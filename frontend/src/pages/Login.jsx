@@ -24,7 +24,7 @@ function Login() {
 
     try {
       const response = await fetch(
-        "http://http://campus-lost-and-found-1-8d21.onrender.com/api/auth/login",
+        "https://campus-lost-and-found-1-8d21.onrender.com/api/auth/login",
         {
           method: "POST",
           headers: {
